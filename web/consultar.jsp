@@ -80,7 +80,7 @@
 
             try{
                 Class.forName("com.mysql.jdbc.Driver");
-                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/requerimiento","root","");
+                Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/pruebaena","root","");
                 String query="SELECT * FROM requerimiento";
                 Statement st=con.createStatement();
                 ResultSet rs = st.executeQuery(query);
